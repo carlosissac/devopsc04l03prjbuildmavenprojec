@@ -1,3 +1,3 @@
-# devopsc04l03prjbuildmavenprojec
+# devopsc04l03prjbuildmavenproject
 
-devopsc04l03prjbuildmavenprojec
+devopsc04l03prjbuildmavenproject
