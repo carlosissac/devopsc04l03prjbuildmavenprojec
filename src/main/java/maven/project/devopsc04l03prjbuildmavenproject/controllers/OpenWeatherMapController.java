@@ -20,8 +20,9 @@ public class OpenWeatherMapController {
   //public String getOpenWeatherMapStatusMessage(@RequestParam String url) {
     public String getOpenWeatherMapStatusMessage() {
     //String url = "https://github.com/234poiu5p2oiu43p5o2iup3";
-    String url = "https://pitchfork.com";
+    //String url = "https://pitchfork.com";
     //String url = "https://goggggle.com";
+    String url = "https://api.openweathermap.org/data/2.5/weather?q=Mexicali&APPID=348339f868cbef8075feb3660e0303f6";
     String returnMessage = "";
     try {
       URL urlObj = new URL(url);
@@ -39,7 +40,6 @@ public class OpenWeatherMapController {
         //System.out.println(SITE_IS_DOWN);
         returnMessage = SITE_IS_DOWN;
       }
-
     } catch (MalformedURLException e) {
       returnMessage = INCORRECT_URL;
     } catch (IOException e) {
