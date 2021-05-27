@@ -29,15 +29,10 @@ public class OpenWeatherMapController {
       HttpURLConnection conn = (HttpURLConnection) urlObj.openConnection();
       conn.setRequestMethod("GET");
       conn.connect();
-
-      System.out.println(conn.getResponseCode());
       int respCodeCat = conn.getResponseCode() / 100;
-     // System.out.println(respCodeCat);
       if ((respCodeCat == 2) || (respCodeCat == 3)) {
-        //System.out.println(SITE_IS_UP);
         returnMessage = SITE_IS_UP;
       } else {
-        //System.out.println(SITE_IS_DOWN);
         returnMessage = SITE_IS_DOWN;
       }
     } catch (MalformedURLException e) {
